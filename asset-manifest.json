@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/weddingInvites/static/css/main.af579a48.css",
+    "main.js": "/weddingInvites/static/js/main.564a6c72.js",
+    "static/js/787.5b30f80b.chunk.js": "/weddingInvites/static/js/787.5b30f80b.chunk.js",
+    "static/media/lavander-circle.png": "/weddingInvites/static/media/lavander-circle.b819b403bce84272365c.png",
+    "static/media/lemon.otf": "/weddingInvites/static/media/lemon.024c8ca4a177ed80a27a.otf",
+    "static/media/madelyn.otf": "/weddingInvites/static/media/madelyn.049480f85318a9c4ab6d.otf",
+    "static/media/sweet.ttf": "/weddingInvites/static/media/sweet.cc42e753706b5a0d6ef5.ttf",
+    "static/media/montserrat.ttf": "/weddingInvites/static/media/montserrat.9e32cee38e5268e05e87.ttf",
+    "static/media/Oranienbaum.ttf": "/weddingInvites/static/media/Oranienbaum.e5625604e9200634b240.ttf",
+    "static/media/exo.otf": "/weddingInvites/static/media/exo.4cc3c0816f37acdf2605.otf",
+    "static/media/czizh.ttf": "/weddingInvites/static/media/czizh.4cee4f4a3385bddc39b1.ttf",
+    "static/media/closh.png": "/weddingInvites/static/media/closh.05cb324af430ec515d66.png",
+    "static/media/place.png": "/weddingInvites/static/media/place.6c5cfc0847fdfee4f0a7.png",
+    "static/media/maki.ttf": "/weddingInvites/static/media/maki.9d411b80cc14eea780bf.ttf",
+    "static/media/lavander-top.png": "/weddingInvites/static/media/lavander-top.1dcf46ea595c405a78f9.png",
+    "static/media/3.png": "/weddingInvites/static/media/3.9216df0e35d6df381028.png",
+    "index.html": "/weddingInvites/index.html",
+    "main.af579a48.css.map": "/weddingInvites/static/css/main.af579a48.css.map",
+    "main.564a6c72.js.map": "/weddingInvites/static/js/main.564a6c72.js.map",
+    "787.5b30f80b.chunk.js.map": "/weddingInvites/static/js/787.5b30f80b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.af579a48.css",
+    "static/js/main.564a6c72.js"
+  ]
+}
