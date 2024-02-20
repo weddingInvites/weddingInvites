@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import lavanderTop from "../FirstBlock/assets/lavander-top.png";
 import leaf from "../FirstBlock/assets/leaf.png";
-import Datetime from "./assets/24.png";
+import Datetime from "./assets/25.png";
+import bg from "./assets/bg.png";
 
 export const Container = styled.div`
   padding: 80px 0;
@@ -9,9 +10,18 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1)
+    ),
+    url(${bg});
+  background-repeat: no-repeat;
+  background-size: contain;
 
   @media (max-width: 680px) {
     padding: 20px 0 80px;
+    background-size: auto;
   }
 `;
 
@@ -55,14 +65,13 @@ export const Bg2 = styled.div`
 `;
 
 export const Info = styled.div`
-  font-family: "madelyn";
+  font-family: "miama";
   width: 350px;
 `;
 
 export const Title = styled.p`
-  font-size: 64px;
-  line-height: 52px;
-  color: #534f76;
+  font-size: 42px;
+  color: black;
   text-align: center;
   opacity: 0;
 
@@ -82,25 +91,28 @@ export const Text = styled.p`
   font-family: "czizh";
   font-size: 24px;
   font-weight: 400;
-  color: #534f76;
+  color: black;
   text-align: center;
   opacity: 0.8;
   animation: aniTB1 3s forwards;
+
+  b {
+    font-size: 32px;
+  }
 `;
 
 export const Date = styled.p`
-  font-family: "madelyn";
-  font-size: 42px;
+  font-family: "miama";
+  font-size: 22px;
   font-weight: 400;
-  color: #534f76;
+  color: black;
   text-align: center;
   animation: aniTB1 3s forwards;
 `;
 
 export const Month = styled.p`
-  font-size: 64px;
-  line-height: 52px;
-  color: #534f76;
+  font-size: 32px;
+  color: black;
   text-align: center;
   margin: 42px 0 0;
   animation: aniTB1 3s forwards;
@@ -121,8 +133,8 @@ export const Calendar = styled.div`
     position: absolute;
     width: 40px;
     height: 40px;
-    bottom: 30px;
-    right: 81px;
+    bottom: 82px;
+    right: 72px;
 
     animation: aniHeart 3s infinite;
 

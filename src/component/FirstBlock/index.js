@@ -5,34 +5,37 @@ import {
   Man,
   Women,
   Data,
-  LavanderTop,
-  LavanderTopLeft,
-  Leaf,
-  Play,
+  SwiperContainer,
+  Image,
+  ContainerData,
 } from "./styles";
+import { SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+import Image4 from "./assets/4.jpeg";
 
 export default function FirstBlock() {
   return (
     <Container>
-      <LavanderTop />
-      <LavanderTopLeft />
-      <Leaf />
-      <Title>ПРИГЛАШЕНИЕ НА СВАДЬБУ</Title>
-      <Names>
-        <Man>Егор</Man> <p>и</p> <Women>Екатерина</Women>
-      </Names>
-      <Data>27 • 07 • 2024</Data>
-      <Play>
-        <svg
-          width='24'
-          height='24'
-          viewBox='0 0 24 24'
-          fill='none'
-          xmlns='http://www.w3.org/2000/svg'
-        >
-          <path d='M15 12.3301L9 16.6603L9 8L15 12.3301Z' fill='currentColor' />
-        </svg>
-      </Play>
+      <SwiperContainer
+        spaceBetween={0}
+        centeredSlides={true}
+        className='mySwiper'
+      >
+        <SwiperSlide>
+          <Image src={Image4} />
+        </SwiperSlide>
+      </SwiperContainer>
+      <ContainerData>
+        <Title>ПРИГЛАШЕНИЕ НА СВАДЬБУ</Title>
+        <Names>
+          <Man>Александр</Man> <p>и</p> <Women>Наталья</Women>
+        </Names>
+        <Data>10 • 08 • 2024</Data>
+      </ContainerData>
     </Container>
   );
 }

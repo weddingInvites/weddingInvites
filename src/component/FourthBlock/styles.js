@@ -1,6 +1,21 @@
 import styled from "styled-components";
 import lavanderTop from "../FirstBlock/assets/lavander-top.png";
 import leaf from "../FirstBlock/assets/leaf.png";
+import b11 from "./assets/b11.jpg";
+
+export const Brash = styled.div`
+  right: 8px;
+  bottom: -61px;
+  transform: rotate(-17deg);
+  opacity: 0.6;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 105px;
+  position: absolute;
+  background-image: url(${b11});
+  z-index: -1;
+`;
 
 export const Container = styled.div`
   padding: 80px 0;
@@ -122,15 +137,19 @@ export const Bg5 = styled(Bg3)`
 `;
 
 export const Info = styled.div`
-  font-family: "madelyn";
-  width: 350px;
+  font-family: "miama";
+  width: 600px;
   z-index: 2;
+
+  @media (max-width: 680px) {
+    width: 100%;
+  }
 `;
 
 export const Title = styled.p`
-  font-size: 64px;
-  line-height: 52px;
-  color: #534f76;
+  position: relative;
+  font-size: 42px;
+  color: black;
   text-align: center;
   opacity: 0;
 
@@ -144,24 +163,44 @@ export const Title = styled.p`
       opacity: 1;
     }
   }
+
+  @media (max-width: 680px) {
+    font-size: 32px;
+    line-height: 42px;
+  }
 `;
 
 export const Text = styled.p`
-  font-family: "czizh";
-  font-size: 24px;
+  font-family: "montserrat";
   font-weight: 400;
-  color: #534f76;
-  text-align: center;
+  color: black;
+  color: #7e7e7e;
+  font-size: 12px;
   opacity: 0.8;
   animation: aniTB1 3s forwards;
+  width: 200px;
+
+  b {
+    color: black;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  @media (max-width: 680px) {
+    width: 150px;
+  }
 `;
 
 export const Times = styled.div`
   padding: 0 20px;
   display: flex;
-  flex-direction: column;
-  gap: 8px;
+  justify-content: space-between;
+  gap: 40px;
   align-items: center;
+
+  @media (max-width: 680px) {
+    gap: 10px;
+  }
 `;
 
 export const Times2 = styled(Times)`
@@ -169,10 +208,9 @@ export const Times2 = styled(Times)`
 `;
 
 export const Time = styled.span`
-  color: #534f76;
-  font-family: "oranienbaum";
-  font-size: 42px;
-  text-shadow: 2px 2px 0px #fff;
+  color: black;
+  font-family: "czizh";
+  font-size: 32px;
   margin: 0;
 `;
 
@@ -180,7 +218,7 @@ export const Circle = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #534f76;
+  border: 1px solid black;
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -192,21 +230,25 @@ export const Im = styled.img`
 `;
 
 export const Timing = styled.div`
-  width: 300px;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   display: flex;
-  gap: 12px;
-  height: 400px;
+  flex-direction: column;
+  gap: 20px;
   animation: aniTB1 2s forwards;
   animation-delay: 1s;
   opacity: 0;
+  width: 600px;
+
+  @media (max-width: 680px) {
+    width: 100%;
+  }
 `;
 
 export const Line = styled.div`
   position: relative;
   align-self: center;
-  background-color: #534f76;
+  background-color: black;
   min-width: 1px;
   height: 0;
 
@@ -217,7 +259,7 @@ export const Line = styled.div`
       height: 0;
     }
     100% {
-      height: 70%;
+      height: 40px;
     }
   }
 `;
@@ -226,7 +268,7 @@ export const Dot = styled.div`
   position: absolute;
   top: 0;
   right: -2px;
-  background-color: #534f76;
+  background-color: black;
   width: 5px;
   height: 5px;
   border-radius: 50%;
@@ -236,7 +278,7 @@ export const Dot2 = styled.div`
   position: absolute;
   bottom: 0;
   right: -2px;
-  background-color: #534f76;
+  background-color: black;
   width: 5px;
   height: 5px;
   border-radius: 50%;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import lavanderTop from "../FirstBlock/assets/lavander-top.png";
 import leaf from "../FirstBlock/assets/leaf.png";
+import bg from "./assets/bg.jpg";
 
 export const Container = styled.div`
   padding: 80px 0;
@@ -8,7 +9,11 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  background-image: url(${bg});
   position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
 
   iframe {
     height: 0;
@@ -68,15 +73,14 @@ export const Info = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "madelyn";
+  font-family: "miama";
   width: 350px;
   z-index: 2;
 `;
 
 export const Title = styled.p`
-  font-size: 64px;
-  line-height: 52px;
-  color: #534f76;
+  font-size: 42px;
+  color: black;
   text-align: center;
   opacity: 0;
 
@@ -87,8 +91,13 @@ export const Title = styled.p`
       opacity: 0;
     }
     100% {
-      opacity: 1;
+      opacity: 0.8;
     }
+  }
+
+  @media (max-width: 680px) {
+    font-size: 32px;
+    line-height: 42px;
   }
 `;
 
@@ -96,7 +105,7 @@ export const Text = styled.p`
   font-family: "czizh";
   font-size: 24px;
   font-weight: 400;
-  color: #534f76;
+  color: black;
   text-align: center;
   opacity: 0.8;
   animation: aniTB1 3s forwards;

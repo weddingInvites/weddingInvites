@@ -9,20 +9,8 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   position: relative;
+  gap: 40px;
 
-  iframe {
-    height: 0;
-    animation: aniIframe 2s forwards;
-
-    @keyframes aniIframe {
-      0% {
-        height: 0;
-      }
-      100% {
-        height: 350px;
-      }
-    }
-  }
   @media (max-width: 680px) {
     padding: 20px 0 80px;
   }
@@ -68,15 +56,15 @@ export const Info = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "madelyn";
+  font-family: "miama";
   width: 350px;
   z-index: 2;
 `;
 
 export const Title = styled.p`
-  font-size: 64px;
-  line-height: 52px;
-  color: #534f76;
+  font-size: 52px;
+  font-family: "miama";
+  color: black;
   text-align: center;
   opacity: 0;
 
@@ -96,7 +84,7 @@ export const Text = styled.p`
   font-family: "czizh";
   font-size: 24px;
   font-weight: 400;
-  color: #534f76;
+  color: black;
   text-align: center;
   opacity: 0.8;
   animation: aniTB1 3s forwards;
@@ -105,10 +93,7 @@ export const Text = styled.p`
 export const Rounds = styled.div`
   display: flex;
   height: 80px;
-
-  @media (max-width: 680px) {
-    height: 50px;
-  }
+  margin-bottom: 40px;
 `;
 
 export const Round = styled.div`
@@ -152,9 +137,36 @@ export const Round = styled.div`
   &:nth-child(8) {
     animation-delay: 7s;
   }
+`;
 
-  @media (max-width: 680px) {
-    height: 50px;
-    width: 50px;
+export const Girls = styled.div`
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  height: 800px;
+  overflow-y: hidden;
+  p {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    margin: 0 12px 0;
   }
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  @media (max-width: 1280px) {
+    align-self: start;
+    gap: 20px;
+    width: 100%;
+  }
+`;
+
+export const Grid = styled.div`
+  height: 100%;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: 347px 335px 278px;
+  grid-template-rows: 421px 400px;
 `;

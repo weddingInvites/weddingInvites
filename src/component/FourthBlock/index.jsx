@@ -3,24 +3,19 @@ import {
   Info,
   Title,
   Text,
-  Bg2,
   Times,
   Timing,
   Time,
-  Circle,
   Im,
-  Times2,
   Line,
-  Dot,
-  Dot2,
-  Bg3,
-  Bg4,
-  Bg5,
+  Brash,
 } from "./styles";
 import { useIsInViewport } from "../../hooks/useIsInViewport";
 import { useRef, useEffect, useState } from "react";
-import closh from "./assets/closh.png";
-import pin from "./assets/place.png";
+import b from "./assets/b.png";
+import c from "./assets/c.png";
+import cl from "./assets/cl.png";
+import p from "./assets/p.png";
 
 export default function FourthBlock() {
   const ref1 = useRef(null);
@@ -40,51 +35,64 @@ export default function FourthBlock() {
 
   return (
     <Container>
-      <Bg2 />
-      <Bg3 />
-      <Bg4></Bg4>
-      <Bg5></Bg5>
       <Info>
         {isLoadedTitle ? (
           <Title key='displayesTitle' ref={ref1}>
-            Программа
-            <br /> дня
+            Программа дня
+            <Brash />
           </Title>
         ) : (
           <Title key='hiddenTitle' ref={ref1}>
-            <br /> <br /> <br />
+            <br />
           </Title>
         )}
         {isLoadedText ? (
           <Timing key='hText' ref={refText}>
             <Times>
-              <Circle>
-                <Im src={closh} />
-              </Circle>
-              <Time>14:30</Time>
+              <Time>15:00</Time>
+              <Im src={b} />
               <Text>
-                Сбор
+                <b>WELCOME</b>
                 <br />
-                гостей
+                <br />
+                на торжество возьмите с собой свои улыбки и хорошее настроение
               </Text>
             </Times>
-            <Line>
-              <Dot />
-              <Dot2 />
-            </Line>
-            <Times2>
-              <Circle>
-                <Im src={pin} />
-              </Circle>
-              <Time>16:00</Time>
+            <Line />
+            <Times>
+              <Time>15:30</Time>
+              <Im src={c} />
               <Text>
-                 Начало
+                <b>Выездная церемония</b>
                 <br />
-                свадебнного
                 <br />
-                ужина
+                приготовьте платочки для трогательного момента
               </Text>
-            </Times2>
+            </Times>
+            <Line />
+
+            <Times>
+              <Time>16:00</Time>
+              <Im src={p} />
+              <Text>
+                <b>Съемка с гостями на фотозоне</b>
+                <br />
+                <br />
+                время для создания памятных фото и приятных воспоминаний
+              </Text>
+            </Times>
+            <Line />
+
+            <Times>
+              <Time>16:30</Time>
+              <Im src={cl} />
+              <Text>
+                <b>Банкет</b>
+                <br />
+                <br />
+                время танцев, вкусной еды, чудесных пожеланий и развлечений
+              </Text>
+            </Times>
           </Timing>
         ) : (
           <Text key='hiddenText' ref={refText}>

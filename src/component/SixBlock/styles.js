@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import lavanderTop from "../FirstBlock/assets/lavander-top.png";
-import leaf from "../FirstBlock/assets/leaf.png";
+import leaf from "../SecondBlock/assets/bg.png";
+import bg from "./bg.png";
 
 export const Container = styled.div`
   padding: 80px 0;
@@ -17,16 +17,21 @@ export const Container = styled.div`
 `;
 
 export const Bg = styled.div`
-  transform: rotate(27deg);
-  top: 0;
+  transform: rotate(-5deg);
+  bottom: 0;
   position: absolute;
-  right: -400px;
-  background-image: url(${lavanderTop});
+  left: -200px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1)
+    ),
+    url(${leaf});
   background-size: 800px;
   height: 800px;
   width: 800px;
   background-repeat: no-repeat;
-  opacity: 0.2;
+  opacity: 0.8;
   z-index: 1;
 
   @media (max-width: 680px) {
@@ -35,20 +40,20 @@ export const Bg = styled.div`
 `;
 
 export const Bg2 = styled.div`
-  position: absolute;
+  transform: rotate(-5deg);
   top: 0;
-  left: 0;
-  background-image: url(${leaf});
-  background-size: 600px;
-  height: 400px;
-  width: 400px;
+  position: absolute;
+  right: -200px;
+  background-image: url(${bg});
+  background-size: 800px;
+  height: 800px;
+  width: 800px;
   background-repeat: no-repeat;
-  opacity: 0.1;
+  opacity: 0.8;
+  z-index: 1;
 
   @media (max-width: 680px) {
-    background-size: 400px;
-    height: 400px;
-    width: 400px;
+    /* display: none; */
   }
 `;
 
@@ -56,7 +61,7 @@ export const Info = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "madelyn";
+  font-family: "miama";
   width: 350px;
   z-index: 2;
 
@@ -66,9 +71,8 @@ export const Info = styled.div`
 `;
 
 export const Title = styled.p`
-  font-size: 74px;
+  font-size: 54px;
   line-height: 52px;
-  color: #534f76;
   text-align: center;
   opacity: 0;
 
@@ -85,10 +89,8 @@ export const Title = styled.p`
 `;
 
 export const Text = styled.p`
-  font-family: "maki";
-  color: #534f75;
+  font-family: "exo";
   font-size: 17px;
-  font-family: "maki";
   line-height: 1;
   font-weight: 400;
   opacity: 0;

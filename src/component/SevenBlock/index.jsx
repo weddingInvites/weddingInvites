@@ -1,15 +1,12 @@
 import {
   Container,
-  Bg,
   Info,
   Title,
   Text,
-  Bg2,
   Btn,
   Numbers,
   DatesBeforeWedding,
   BottomImage,
-  BottomImageLeft,
 } from "./styles";
 import { useIsInViewport } from "../../hooks/useIsInViewport";
 import { useRef, useEffect, useState } from "react";
@@ -26,7 +23,7 @@ export default function SevenBlock() {
   const isInViewportText = useIsInViewport(refText);
   const isInViewportText1 = useIsInViewport(refText1);
 
-  var endDate = new Date("Jul 27, 2024 15:30:00").getTime();
+  var endDate = new Date("Aug 10, 2024 15:30:00").getTime();
   var decCache = [],
     decCases = [2, 0, 1, 1, 1, 2];
 
@@ -78,7 +75,6 @@ export default function SevenBlock() {
 
   return (
     <Container>
-      <Bg2 />
       <Info>
         {isLoadedTitle ? (
           <Title key='displayesTitle' ref={ref1}>
@@ -104,19 +100,17 @@ export default function SevenBlock() {
         <a href='tel:89272751199' style={{ textDecoration: "none" }}>
           <Btn>+79272751199</Btn>
         </a>
-        <Bg />
         <Text key='displayesText1' ref={refText1}>
-          <p>Мы будем рады видеть вас на нашем празднике!</p>
+          <p>Ждем вас!</p>
           <DatesBeforeWedding>
             <Numbers id='timer-days' />
             <Numbers id='timer-hours' />
             <Numbers id='timer-mins' />
             <Numbers id='timer-secs' />
           </DatesBeforeWedding>
-          <BottomImage />
-          <BottomImageLeft />
         </Text>
       </Info>
+      <BottomImage />
     </Container>
   );
 }

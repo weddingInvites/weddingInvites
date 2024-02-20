@@ -1,4 +1,4 @@
-import { Container, Bg, Info, Title, Text, Bg2 } from "./styles";
+import { Container, Info, Title, Text, Bg, Bg2 } from "./styles";
 import { useIsInViewport } from "../../hooks/useIsInViewport";
 import { useRef, useEffect, useState } from "react";
 
@@ -46,10 +46,10 @@ export default function SixBlock() {
           </Text>
         )}
         <iframe
-          src='https://forms.yandex.ru/cloud/65b60a07c417f3b45f3c7c5e/?iframe=1'
+          src='https://forms.yandex.ru/u/65d365962530c2000f440768/?iframe=1'
           frameborder='0'
-          name='ya-form-65b60a07c417f3b45f3c7c5e'
-          height='580'
+          name='ya-form-65d365962530c2000f440768'
+          height='1460'
           width='370'
           scrolling='no'
         ></iframe>

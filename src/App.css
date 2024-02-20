@@ -5,6 +5,12 @@
 }
 
 @font-face {
+  font-family: "miama";
+  src: local("miama"), url("./font/miama.otf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
   font-family: "czizh";
   src: local("czizh"), url("./font/czizh.ttf") format("truetype");
   font-weight: normal;

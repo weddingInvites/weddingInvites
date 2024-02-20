@@ -25,8 +25,6 @@ export default function ThirdBlock() {
 
   return (
     <Container>
-      <Bg />
-      <Bg2 />
       <Info>
         {isLoadedTitle ? (
           <Title key='displayesTitle' ref={ref1}>
@@ -40,8 +38,8 @@ export default function ThirdBlock() {
         )}
         {isLoadedText ? (
           <Text key='displayesText' ref={refText}>
-            Торжество будет проходить в ресторане "Хурма",(развлекательный
-            комплекс Шато, 2 этаж)
+            Республика Мордовия, г. Саранск, Отель Radisson, вход со стороны
+            Кавказской (Советская, 54)
           </Text>
         ) : (
           <Text key='hiddenText' ref={refText}>
@@ -50,7 +48,7 @@ export default function ThirdBlock() {
         )}
         {openMap && (
           <iframe
-            src='https://yandex.ru/map-widget/v1/?um=constructor%3A657b576d31b55cf73886aaf95da16afc43b067cf0374fdb7f6c03b252bb61258&amp;source=constructor'
+            src='https://yandex.ru/map-widget/v1/org/radisson_hotel_congress_center_saransk/232314082176/?indoorLevel=1&ll=45.177525%2C54.180225&z=17'
             width='350'
             height='350'
             frameborder='0'
